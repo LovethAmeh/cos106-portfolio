@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planner | Loveth Ameh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav aria-label="Main navigation">
+<a class="logo" href="index.html">Loveth Ameh</a>
+<button id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About Me</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" class="active" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav>
+</header>
+<main>
+<h2>Academic planner</h2>
+<form id="task-form" class="add-row" style="max-width:none">
+<label for="task-input" style="position:absolute;left:-9999px">New task</label>
+<input id="task-input" type="text" placeholder="e.g. Finish COS 106 project">
+<button class="btn" type="submit">Add task</button>
+</form>
+<p id="task-count" class="empty" style="margin-bottom:.8rem"></p>
+<ul id="task-list"></ul>
+</main>
+<footer><p>&copy; 2026 Loveth Ameh | MIVA Open University</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
